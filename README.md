@@ -1,1 +1,1 @@
-# this is my rep for trainin pyton!
+# this is my rep for trainin python!
