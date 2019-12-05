@@ -1,7 +1,7 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 from selenium.webdriver.firefox.webdriver import WebDriver
-
+from fixture.session import SessionHelper
 __author__ = "Iv.Osipov"
 
 
@@ -10,14 +10,10 @@ class Application:
     def __init__(self):
         self.driver = WebDriver()
         self.driver.implicitly_wait(60)
+        self.session = SessionHelper(self)
 
     def destroy(self):
         self.driver.quit()
-
-    def logout(self):
-        driver = self.driver
-        driver.find_element_by_link_text("Logout").click()
-
 
     def return_to_groups_page(self):
         driver = self.driver
@@ -43,29 +39,13 @@ class Application:
         driver.find_element_by_name("submit").click()
         self.return_to_groups_page()
 
-
     def open_groups_page(self):
         driver = self.driver
         driver.find_element_by_link_text("groups").click()
 
-
-    def login(self, login, password):
-        driver = self.driver
-        self.open_page()
-        driver.find_element_by_name("user").click()
-        driver.find_element_by_name("user").clear()
-        driver.find_element_by_name("user").send_keys(login)
-        driver.find_element_by_name("pass").click()
-        driver.find_element_by_name("pass").clear()
-        driver.find_element_by_name("pass").send_keys(password)
-        driver.find_element_by_xpath(
-            "(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/following::input[2]").click()
-
-
     def open_page(self):
         driver = self.driver
         driver.get("http://localhost/addressbook/")
-
 
     def is_element_present(self, how, what):
         try:
@@ -74,14 +54,12 @@ class Application:
             return False
         return True
 
-
     def is_alert_present(self):
         try:
             self.driver.switch_to_alert()
         except NoAlertPresentException as e:
             return False
         return True
-
 
     def close_alert_and_get_its_text(self):
         try:
