@@ -7,7 +7,7 @@ __author__ = 'Iv.Osipov'
 
 class SessionHelper:
 
-    def __init__(self,app):
+    def __init__(self, app):
         self.app = app
 
     def login(self, login, password):
