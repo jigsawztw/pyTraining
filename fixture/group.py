@@ -2,12 +2,13 @@ __author__ = 'Iv.Osipov'
 
 class GroupHelper:
 
-    def __init__(self,app):
+    def __init__(self, app):
         self.app = app
 
     def return_to_groups_page(self):
         driver = self.app.driver
         driver.find_element_by_link_text("group page").click()
+
 
 
     def create(self, group):
@@ -28,6 +29,15 @@ class GroupHelper:
         # submit creation group
         driver.find_element_by_name("submit").click()
         self.return_to_groups_page()
+
+    def delete_first_group(self):
+        driver = self.app.driver
+        self.open_groups_page()
+        driver.find_element_by_name("selected[]").click()  # выбрать первую группу
+        driver.find_element_by_name("delete").click()  # подтвердить удаление
+        self.return_to_groups_page()
+
+
 
     def open_groups_page(self):
         driver = self.app.driver

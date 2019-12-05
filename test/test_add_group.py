@@ -1,14 +1,5 @@
 # -*- coding: utf-8 -*-
-from fixture.application import Application
 from model.group import Group
-import pytest
-
-
-@pytest.fixture
-def app(request):
-    fixture = Application()  # Создаем фикстуру
-    request.addfinalizer(fixture.destroy)  # задаем ей финализацию в виде метода destroy()
-    return fixture
 
 # Метод осуществляет вход в систему, создает группу с параметрами и проверяет ее наличие, затем выходит из системы
 def test_add_group(app):

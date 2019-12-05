@@ -9,7 +9,8 @@ __author__ = "Iv.Osipov"
 class Application:
 
     def __init__(self):
-        self.driver = WebDriver()       # инциаилизурем веб драйвер
+        self.driver = WebDriver()# инциаилизурем веб драйвер
+
         self.driver.implicitly_wait(60)  # выставляем неявные ожидания в 1 мин
         self.session = SessionHelper(self)  # инициализируем помощника по работе с сессиями
         self.group = GroupHelper(self)  # инициализируем помощника по работе с группами

@@ -4,6 +4,9 @@
     <list default="true" id="fcdb7fcb-a7c2-412a-874f-b4f82bf24104" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geckodriver.exe" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +20,7 @@
         <option value="Python Script" />
       </list>
     </option>
+    <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,17 +37,66 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ivan\Desktop\pyTraining\test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ivan\Desktop\pyTraining" />
       <recent name="C:\Users\Ivan\Desktop\pyTraining\test" />
       <recent name="C:\Users\Ivan\Desktop\pyTraining\fixture" />
       <recent name="C:\Users\Ivan\Desktop\pyTraining\model" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.pytest in test">
+    <configuration name="pytest for test_add_group.test_add_group" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pythontests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_add_group.test_add_group&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_add_group.test_add_group_empty" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pythontests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_add_group.test_add_group_empty&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pythontests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest in test_add_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="pythontests" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -59,9 +112,28 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_del_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="pythontests" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_del_group.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in test" />
+        <item itemvalue="Python tests.pytest in test_del_group.py" />
         <item itemvalue="Python tests.pytest in test_add_group.py" />
+        <item itemvalue="Python tests.pytest for test_add_group.test_add_group" />
+        <item itemvalue="Python tests.pytest for test_add_group.test_add_group_empty" />
       </list>
     </recent_temporary>
   </component>
@@ -102,7 +174,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575559362887</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Выделен класс для работы с группами">
+      <created>1575560396611</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1575560396611</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Выделен класс для работы с группами">
+      <created>1575560404321</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575560404321</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,57 +207,58 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Созднаы пакеты для разных зон ответственности" />
     <MESSAGE value="Выделен класс для управления сессиями" />
-    <option name="LAST_COMMIT_MESSAGE" value="Выделен класс для управления сессиями" />
+    <MESSAGE value="Выделен класс для работы с группами" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выделен класс для работы с группами" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="481" y="247" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575558098809">
+    <state x="481" y="247" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575563805832">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="481" y="247" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575558098809" />
-    <state x="996" y="110" key="CommitChangelistDialog2" timestamp="1575560395644">
+    <state x="481" y="247" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575563805832" />
+    <state x="996" y="110" key="CommitChangelistDialog2" timestamp="1575560403352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="996" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1575560395644" />
-    <state width="1207" height="183" key="GridCell.Tab.0.bottom" timestamp="1575560351921">
+    <state x="996" y="110" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1575560403352" />
+    <state width="996" height="284" key="GridCell.Tab.0.bottom" timestamp="1575567189251">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1207" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575560351921" />
-    <state width="1207" height="183" key="GridCell.Tab.0.center" timestamp="1575560351920">
+    <state width="996" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575567189251" />
+    <state width="996" height="284" key="GridCell.Tab.0.center" timestamp="1575567189251">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1207" height="183" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575560351920" />
-    <state width="1207" height="183" key="GridCell.Tab.0.left" timestamp="1575560351920">
+    <state width="996" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575567189251" />
+    <state width="996" height="284" key="GridCell.Tab.0.left" timestamp="1575567189251">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1207" height="183" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575560351920" />
-    <state width="1207" height="183" key="GridCell.Tab.0.right" timestamp="1575560351921">
+    <state width="996" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575567189251" />
+    <state width="996" height="284" key="GridCell.Tab.0.right" timestamp="1575567189251">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1207" height="183" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575560351921" />
-    <state width="1207" height="240" key="GridCell.Tab.1.bottom" timestamp="1575556426879">
+    <state width="996" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575567189251" />
+    <state width="996" height="237" key="GridCell.Tab.1.bottom" timestamp="1575566725297">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1207" height="240" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575556426879" />
-    <state width="1207" height="240" key="GridCell.Tab.1.center" timestamp="1575556426879">
+    <state width="996" height="237" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575566725297" />
+    <state width="996" height="237" key="GridCell.Tab.1.center" timestamp="1575566725297">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1207" height="240" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575556426879" />
-    <state width="1207" height="240" key="GridCell.Tab.1.left" timestamp="1575556426878">
+    <state width="996" height="237" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575566725297" />
+    <state width="996" height="237" key="GridCell.Tab.1.left" timestamp="1575566725297">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1207" height="240" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575556426878" />
-    <state width="1207" height="240" key="GridCell.Tab.1.right" timestamp="1575556426879">
+    <state width="996" height="237" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575566725297" />
+    <state width="996" height="237" key="GridCell.Tab.1.right" timestamp="1575566725297">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1207" height="240" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575556426879" />
-    <state x="859" y="269" key="SettingsEditor" timestamp="1575556793638">
+    <state width="996" height="237" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575566725297" />
+    <state x="859" y="269" key="SettingsEditor" timestamp="1575564676099">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="859" y="269" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575556793638" />
-    <state x="934" y="248" key="Vcs.Push.Dialog.v2" timestamp="1575559364708">
+    <state x="859" y="269" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575564676099" />
+    <state x="934" y="248" key="Vcs.Push.Dialog.v2" timestamp="1575560410610">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="934" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575559364708" />
+    <state x="934" y="248" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1575560410610" />
     <state x="1151" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575558339374">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

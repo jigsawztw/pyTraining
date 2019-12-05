@@ -1,3 +1,8 @@
+import time
+
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
 __author__ = 'Iv.Osipov'
 
 class SessionHelper:
@@ -20,3 +25,4 @@ class SessionHelper:
     def logout(self):
         driver = self.app.driver
         driver.find_element_by_link_text("Logout").click()
+        time.sleep(1)
