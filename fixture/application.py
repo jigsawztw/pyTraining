@@ -2,46 +2,22 @@ from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 from selenium.webdriver.firefox.webdriver import WebDriver
 from fixture.session import SessionHelper
+from fixture.group import GroupHelper
 __author__ = "Iv.Osipov"
 
-
+# Класс представляет собой фикстуру
 class Application:
 
     def __init__(self):
-        self.driver = WebDriver()
-        self.driver.implicitly_wait(60)
-        self.session = SessionHelper(self)
+        self.driver = WebDriver()       # инциаилизурем веб драйвер
+        self.driver.implicitly_wait(60)  # выставляем неявные ожидания в 1 мин
+        self.session = SessionHelper(self)  # инициализируем помощника по работе с сессиями
+        self.group = GroupHelper(self)  # инициализируем помощника по работе с группами
 
     def destroy(self):
         self.driver.quit()
 
-    def return_to_groups_page(self):
-        driver = self.driver
-        driver.find_element_by_link_text("group page").click()
 
-
-    def create_group(self, group):
-        driver = self.driver
-        self.open_groups_page()
-        # init group page creation
-        driver.find_element_by_name("new").click()
-        # fill group fields
-        driver.find_element_by_name("group_name").click()
-        driver.find_element_by_name("group_name").clear()
-        driver.find_element_by_name("group_name").send_keys(group.name)
-        driver.find_element_by_name("group_header").click()
-        driver.find_element_by_name("group_header").clear()
-        driver.find_element_by_name("group_header").send_keys(group.header)
-        driver.find_element_by_name("group_footer").click()
-        driver.find_element_by_name("group_footer").clear()
-        driver.find_element_by_name("group_footer").send_keys(group.footer)
-        # submit creation group
-        driver.find_element_by_name("submit").click()
-        self.return_to_groups_page()
-
-    def open_groups_page(self):
-        driver = self.driver
-        driver.find_element_by_link_text("groups").click()
 
     def open_page(self):
         driver = self.driver
